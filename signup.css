@@ -14,17 +14,15 @@ html,body {
     display:flex;
     height:95%;
     width:80%;
-    justify-content: center;
     align-items: center;
     gap:2rem;
 }
 
 header{
-    
     display: flex;
     flex-direction: column;
     color: white;
-    justify-content: center;
+    
 }
 
 h1{
@@ -54,28 +52,29 @@ section {
     
 }
 .container-free{
-    background-color:rgba(108, 108, 111, 0.5);
-    
-padding-bottom:5px;
-width:fit-content;
-border-radius:5px;
-}
-.container-card{
-    background-color:rgba(108, 108, 111, 0.5);
-padding-bottom:5px;
-width:fit-content;
-border-radius:5px;
+    background-color:rgba(117, 117, 123, 0.4);
+    padding-bottom:7px;
+    width:fit-content;
+    border-radius:5px;
 }
 
+.container-card{
+    background-color:rgba(117, 117, 123, 0.4);
+padding-bottom:7px;
+width:fit-content;
+border-radius:5px;
+}
 
 h2{
     font-weight: 600;
     font-size: small;
 }
+
 #free p {
     font-weight:400;
  font-size:x-small;
 }
+
 section{
     gap:1rem;
 }
@@ -109,8 +108,13 @@ button {
     width:366px;
     height:40px;
     border-radius: 3px;
-    border:0;
-    background-color: hsl(154, 59%, 51%);
+    border-top:0;
+    border-left:0;
+    border-right: 0;
+    border-color: hsl(154, 52%, 42%);
+    border-bottom-width: 0.2rem;
+    border-bottom-style: solid;
+    background-color: hsl(154, 65%, 55%);
     color:white;
     font-weight: 600;
     font-size:small;
@@ -128,4 +132,62 @@ button {
 h3 {
  font-size:x-small;
  color: hsl(0, 100%, 74%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width:600px) {
+html,body{
+    background-image: url("./images/bg-intro-mobile.png");
+    height:700px;
+}
+.body {
+  flex-direction: column;
+  align-items: center;
+  width:300px;
+  gap:1rem;
+}
+
+.card {
+    width: 300px;
+}
+
+section {
+    align-items: center;
+}
+input {
+    width:250px;
+}
+button {
+    width: 270px;
+}
+
+.terms {
+flex-direction: column;
+gap:0;
+}
+
+h3{
+    margin-top: -0.5rem;
+}
+#free {
+width:300px;
+}
+h1{
+    width:300px; 
+    font-size:30px; 
+    text-align:center;
+   
+}
+header p{
+    width:310px; 
+    text-align:center;
+    margin-top: -0.5rem;
+}
+header {
+    gap:0;
+}
+
+
 }
