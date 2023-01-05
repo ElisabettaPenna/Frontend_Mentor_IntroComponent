@@ -17,7 +17,7 @@ html,body {
     align-items: center;
     gap:2rem;
 }
-
+/*left*/
 header{
     display: flex;
     flex-direction: column;
@@ -35,6 +35,8 @@ header p {
     width:400px;
     font-size: small;
 }
+/*form*/
+
 section {
     display:flex;
     flex-direction: column;
@@ -90,7 +92,7 @@ section{
     gap:1.2rem;
 }
 
-input {
+.ok {
     width:350px;
     height:35px;
     font-family: Poppins;
@@ -101,7 +103,29 @@ input {
     border-color:hsl(240, 17%, 88%);
     border-width:1px;
     border-style:solid;
+    background-image: none;
+}
+.inputerror{
+    width:350px;
+    height:35px;
+    font-family: Poppins;
+    font-weight:600;
+    font-size:12px;
+    padding-inline-start: 1rem;
+    border-radius: 4px;
+    border-color: hsl(0, 100%, 74%);
+    border-width:1px;
+    border-style:solid;
+    background-image: url("./images/icon-error.svg");
+    background-position: right;
+    background-position-x: 21rem;
+    background-repeat: no-repeat;
     
+}
+
+.card p{
+    display:none;
+    margin-top: -0.1rem;
 }
 button {
     font-family: Poppins;
@@ -125,7 +149,7 @@ button {
     align-items: center;
     margin-top: -1rem;
 }
-.terms p {
+.terms span {
   font-size: xx-small;
   color:hsl(246, 25%, 77%);
 }
@@ -133,8 +157,18 @@ h3 {
  font-size:x-small;
  color: hsl(0, 100%, 74%);
 }
+
+.form {
+ color:hsl(0, 100%, 74%);
+ font-size: xx-small;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
 
 
 @media screen and (max-width:600px) {
@@ -156,8 +190,18 @@ html,body{
 section {
     align-items: center;
 }
-input {
+.ok{
     width:250px;
+}
+.inputerror {
+    width:250px;
+    border-color: hsl(0, 100%, 74%);
+    border-width:1px;
+    border-style:solid;
+    background-image: url("./images/icon-error.svg");
+    background-position: right;
+    background-position-x: 14.5rem;
+    background-repeat: no-repeat;
 }
 button {
     width: 270px;
@@ -165,11 +209,11 @@ button {
 
 .terms {
 flex-direction: column;
-gap:0;
+gap:0,1rem;
 }
 
 h3{
-    margin-top: -0.5rem;
+    margin-top: -0.2rem;
 }
 #free {
 width:300px;
@@ -189,5 +233,8 @@ header {
     gap:0;
 }
 
-
+#error4{
+    width:270px;
 }
+}
+

@@ -28,21 +28,29 @@
 </div>
 <div class="container-card">
 <div class="card">
-  <div id="First">
-  <input type="text" placeholder="First Name"> 
+  <div class="form" name="First">
+     <input class="ok" type="text" placeholder="First Name"> 
+     <p id="advice1">First name cannot be empty</p>
+     <p id="error1">Looks like there aren't only letters</p>
   </div>
-  <div id="Last">
-  <input type="text" placeholder="Last Name"> 
+  <div class="form" name="Last">
+  <input class="ok" type="text" placeholder="Last Name"> 
+  <p id="advice2">Last name cannot be empty</p>
+  <p id="error2">Looks like there aren't only letters</p>
   </div>
-  <div id="Email">
-  <input type="text" placeholder="Email Address">
+  <div class="form" name="Email">
+  <input class="ok" type="text" placeholder="Email Address">
+  <p id="advice3">Email Adress cannot be empty</p>
+  <p id="error3">Looks like this is not an email</p>
   </div>
-  <div id="Password">
-  <input type="text" placeholder="Password">
+  <div class="form" name="Password">
+  <input type="text" placeholder="Password"class="ok">
+  <p id="advice4">Password cannot be empty</p>
+  <p id="error4">Password must have at least 8 characters, one uppercase and lowercase letter, one number and one special character</p>
   </div>
   <button>CLAIM YOUR FREE TRIAL</button>
    <div class="terms">
-  <p>By clicking the button, you are agreeing to our</p><h3>Terms and Services</h3>
+  <span>By clicking the button, you are agreeing to our</span><h3>Terms and Services</h3>
   </div>
 </div>
 </div>
@@ -52,7 +60,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Elisabetta Penna</a>.
     </p>
   </footer>
 </body>
